@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: nginx-site
 spec:
-  replicas: 2
+  replicas: 4
   selector:
     matchLabels:
       app: nginx-site
@@ -14,4 +14,4 @@ spec:
     spec:
       containers:
         - name: nginx
-          image: avielb/myimage-2402:v0.2
+          image: avielb/1808-myimage:v0.1
